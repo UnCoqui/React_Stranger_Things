@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { useHistory  } from "react-router-dom";
+import { callApi } from "../api";
 
 
-const handleDelete = async () => {
+
+
+
+const MyPosts = ({ userData, setPosts }) => {
+  
+  const handleDelete = async () => {
     const { success, error } = await callApi({
       url: `/posts/${post._id}`,
       token: token,
@@ -22,9 +28,6 @@ const handleDelete = async () => {
 
 
 
-
-const MyPosts = ({ userData }) => {
-  
   const myUsername = userData.username;
   const myPosts = userData.posts;
   const history = useHistory();

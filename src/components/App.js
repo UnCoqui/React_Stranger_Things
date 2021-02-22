@@ -99,7 +99,7 @@ const App = () => {
           <Messages userData={userData} setUserData={setUserData}/>
         </Route>
         <Route exact path="/profile/myposts">
-          <MyPosts userData={userData} setUserData={setUserData}/>
+          <MyPosts userData={userData} setUserData={setUserData} setPosts={setPosts}/>
         </Route>
         <Route exact path="/profile">
           <Profile userData={userData} token={token} posts={posts} />
