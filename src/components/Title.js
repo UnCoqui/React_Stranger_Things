@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from "react";
 
 
-const Title = () => {
-    return <div id="title">
+const Title = ({userData}) => {
+    return ( 
+    <div id="title">
     <h1>
-     Stranger Thing's
+     Stranger's Things
     </h1>
     <h5>
-Just a development set up for Stranger things
+      Using React and an API to simulate a "popular" listing website.
     </h5>
+    
   </div>
+    )
 }
 export default Title;
