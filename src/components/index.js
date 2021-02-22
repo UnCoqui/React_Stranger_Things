@@ -14,7 +14,7 @@
 export { default as CreatePost } from './CreatePost.js';
 export { default as Messages } from './profile/Messages.js';
 export { default as SendMessage } from './SendMessage.js';
-export { default as MyPosts } from './profile/MyPosts.js';
+export { default as MyPosts } from './MyPosts.js';
 export { default as Profile } from './profile/Profile.js';
 export { default as Posts } from './Posts.js';
 export { default as Post } from './Post.js';

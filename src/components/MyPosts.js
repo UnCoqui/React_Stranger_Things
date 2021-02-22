@@ -6,9 +6,10 @@ import { callApi } from "../api";
 
 
 
-const MyPosts = ({ userData, setPosts }) => {
-  
+const MyPosts = ({ userData, setPosts, posts }) => {
+
   const handleDelete = async () => {
+    // event.preventDefault();
     const { success, error } = await callApi({
       url: `/posts/${post._id}`,
       token: token,
@@ -53,7 +54,7 @@ const MyPosts = ({ userData, setPosts }) => {
   >
     View My Post
   </button>
-  <button id="deleteButton" onClick={handleDelete}>Delete</button>
+  {/* <button id="deleteButton" onClick={handleDelete}>Delete</button> */}
   <button
     onClick={() => {
       history.goBack();

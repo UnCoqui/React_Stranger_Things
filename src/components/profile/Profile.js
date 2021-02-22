@@ -17,10 +17,10 @@ const Profile = ({ userData, token, posts }) => {
         )}
 
         <div>
-          <Link to="/profile/myposts">My posts</Link>
+          <button><Link to="/profile/myposts">My posts</Link></button>
         </div>
         <div>
-          <Link to="/profile/messages">My Messages</Link>
+          <button><Link to="/profile/messages">My Messages</Link></button>
         </div>
       </div>
     </div>
